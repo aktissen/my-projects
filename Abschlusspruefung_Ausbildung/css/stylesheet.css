@@ -1,0 +1,1130 @@
+* {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.4em;
+    box-sizing: border-box;
+    border-radius: 0;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+b {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-size: 12px;
+    }
+
+    .headline-rezept {
+        font-family: Serifa, serif;
+        font-weight: 700;
+        font-size: 22px !important;
+    }
+}
+
+.headline-rezept {
+    font-family: Serifa, serif;
+    font-weight: 700;
+    font-size: 43px;
+    margin-top: 0;
+}
+
+/* =============== */
+/* === Header === */
+/* =============== */
+
+/* ==== menu ==== */
+.overlay {
+    position: fixed;
+    overflow: hidden;
+    background-color: white;
+    width: 320px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    z-index: 20;
+    transform: translateX(100%);
+    transition: transform 1s ease;
+}
+
+.overlay.open {
+    transform: translateX(0%);
+}
+
+.overlay ul {
+    position: absolute;
+    display: block;
+    list-style: none;
+    text-align: right;
+    width: 90%;
+    margin: 100px 0 0 0;
+}
+
+.overlay li a {
+    text-decoration: none;
+    color: #323232;
+    padding: 0 90px 5px 0;
+    margin-right: -55px;
+    line-height: 60px;
+    width: 100%;
+    border-bottom: 2px solid #ffe9d0;
+}
+
+.overlay .close {
+    display: block;
+    background: url('../img/close.png') no-repeat center center;
+    height: 24px;
+    width: auto;
+    margin-top: 60px;
+    padding-right: 150px;
+    float: right;
+    cursor: pointer;
+    z-index: 30;
+}
+
+@media only screen and (max-width: 750px) {
+    .overlay {
+        margin-right: -10px;
+        width: 120%;
+    }
+
+    .overlay li a {
+        font-size: 14px;
+    }
+
+}
+
+
+/* ==== logo and image ==== */
+.logo-line {
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+    align-items: center;
+}
+
+.logo {
+    height: 53px;
+    margin: 0 15px;
+}
+
+.trenner-one,
+.trenner-three {
+    width: 65px;
+    border-bottom: 2px solid white;
+    opacity: 0.5;
+    margin-top: 22px;
+}
+
+.trenner-two {
+    width: 100%;
+    border-bottom: 2px solid white;
+    opacity: 0.5;
+    margin-top: 22px;
+}
+
+.burger {
+    width: auto;
+    height: auto;
+    margin: 15px 15px 0 15px;
+}
+
+.text-header {
+    position: absolute;
+    margin: 50px 0 0 64px;
+}
+
+.headline {
+    font-family: serifa, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 60px;
+    margin-top: -15px;
+}
+
+.header-image {
+    position: relative;
+    background: url('../img/header.jpg') no-repeat center center;
+    height: 600px;
+    width: 100%;
+    color: white;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .trenner-one,
+    .trenner-three {
+        width: 40px;
+    }
+
+    .headline {
+        font-size: 28px;
+    }
+
+    .text-header {
+        margin-left: 30px;
+    }
+}
+
+
+/* =============== */
+/* === vorfreude === */
+/* =============== */
+
+h2 {
+    font-family: serifa, serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 30px;
+}
+
+.vorfreude {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #ffe9d0;
+    color: #323232;
+    padding: 0 64px 50px 30px;
+}
+
+.text-vorfreude {
+    background-color: #ffdbb1;
+    padding: 40px;
+    padding-top: 15px;
+    width: 120%;
+    height: 100%;
+    margin-top: -75px;
+}
+
+.paragraph-vorfreude {
+    margin-top: -10px;
+    width: 90%;
+}
+
+.anfasser {
+    height: 210px;
+    border-right: 2px solid white;
+    position: absolute;
+    margin: -127px 0 0 50px;
+    top: 0;
+    left: 0;
+    z-index: 50;
+}
+
+.punkte-vorfreude {
+    padding: 50px 0 0 50px;
+    width: 88%;
+}
+
+.unterpunkte {
+    display: flex;
+    flex-direction: row;
+}
+
+.aehre-klein {
+    background: url('../img/aehre_klein.png') no-repeat center center;
+    height: 22px;
+    width: 15px;
+    padding: 45px 45px 0 0;
+}
+
+.stoerer {
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    padding: 10px 0 0 25px;
+    margin: 10px 0 0 17px;
+    width: 120%;
+}
+
+.leinsamen {
+    position: absolute;
+    background: url('../img/leinsamen.png') no-repeat center center;
+    background-size: 190px 396px;
+    width: 190px;
+    height: 396px;
+    right: 0;
+    margin-top: -160px;
+    overflow-x: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+    .vorfreude {
+        flex-direction: column;
+        padding: 0 75px 55px 30px;
+    }
+
+    h2 {
+        font-family: serifa, serif;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 22px;
+    }
+
+    .paragraph-vorfreude {
+        width: 100%;
+    }
+
+    .text-vorfreude {
+        padding-bottom: 10px;
+    }
+
+    .punkte-vorfreude {
+        padding: 20px 0 0 0px;
+        width: 120%;
+    }
+
+    .aehre-klein {
+        margin-left: -15px;
+    }
+
+    .text-unterpunkte {
+        padding-top: 8px;
+    }
+
+    .stoerer {
+        margin: 10px 0 0 0;
+        padding-bottom: 5px;
+    }
+
+    .leinsamen {
+        margin-top: -125px;
+        background-size: 108px 224px;
+        width: 108px;
+        height: 224px;
+    }
+}
+
+
+/* =============== */
+/* === formulare === */
+/* =============== */
+
+input {
+    appearance: none;
+}
+
+.anmeldung {
+    position: relative;
+    height: 830px;
+}
+
+.spezial-angebot {
+    padding-top: 50px;
+    height: 900px;
+}
+
+.container-angebot {
+    padding-top: 30px;
+}
+
+.headline-anmeldung {
+    font-size: 30px;
+    padding-left: 64px;
+    margin-top: -25px;
+}
+
+.trenner-angebot {
+    width: 200px;
+    border-bottom: 2px solid #ffdbb1;
+    padding-top: 0px;
+    margin-top: -15px;
+}
+
+.subheadline-angebot {
+    padding-left: 64px;
+    padding-top: 0px;
+    margin-top: 7px;
+}
+
+.formular {
+    float: left;
+    width: 100%;
+    margin-top: -30px;
+}
+
+.formular-left {
+    width: 46%;
+    float: left;
+}
+
+.formular-right {
+    width: 45%;
+    float: left;
+    padding: 35px 0 0 130px;
+    margin: 0;
+}
+
+
+/* === textfelder === */
+.textfeld-first {
+    margin-top: 40px;
+    margin-left: 64px;
+}
+
+.textfeld-big {
+    margin-top: 80px;
+    margin-left: 64px;
+}
+
+.textfeld-small {
+    margin-top: 30px;
+    margin-left: 64px;
+}
+
+.textfeld {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #323232;
+    outline: none;
+    height: 35px;
+    width: 80%;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.textfeld-parted {
+    position: relative;
+    border: none;
+    border-bottom: 1px solid #323232;
+    outline: none;
+    height: 35px;
+    width: 100%;
+    padding-left: 10px;
+    margin-left: 20px;
+    margin-top: 10px;
+    border-radius: 0;
+}
+
+.before:before {
+    position: absolute;
+    content: "";
+    width: 5px;
+    height: 35px;
+    background-color: #323232;
+    margin-top: 10px;
+}
+
+.input-horizontal {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.straße {
+    display: flex;
+    flex-basis: 80%;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 35px;
+}
+
+.hausnummer {
+    display: flex;
+    flex-basis: 20%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.ort {
+    display: flex;
+    flex-basis: 70%;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.plz {
+    display: flex;
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 35px;
+}
+
+
+/* === trenner === */
+.trenner {
+    height: 268px;
+    border-right: 2px solid #323232;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    margin-left: 50%;
+    margin-top: -10px;
+}
+
+
+/* === Radiobuttons === */
+.ersatztermin {
+    padding-top: 58px;
+}
+
+.radio {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    margin-top: -15px;
+}
+
+.termin:checked,
+.termin:not(:checked) {
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.termin:checked+.paragraph::before,
+.termin:not(:checked)+.paragraph::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-right: 18px;
+    top: 7px;
+    border: 1px solid #323232;
+    border-radius: 50px;
+    background: white;
+}
+
+.termin:checked+.paragraph::before {
+    background: #323232;
+    box-shadow: inset 0 0 0 4px white;
+}
+
+/* === buttons === */
+.button {
+    margin-top: 58px;
+    background: none;
+    border: 1px solid #323232;
+    border-left: 4px solid #323232;
+    width: 136px;
+    height: 35px;
+}
+
+input[type=submit] {
+    margin-left: 15px;
+}
+
+.pflichtfelder {
+    font-size: 14px;
+    margin-top: 7px;
+}
+
+/* === checkboxen === */
+.lieferadresse {
+    margin-left: 0px;
+    margin-right: -30px;
+}
+
+.checkbox {
+    cursor: pointer;
+}
+
+.mehlsortimente:checked,
+.mehlsortimente:not(:checked) {
+    background: transparent;
+    border: none;
+    display: none;
+}
+
+.mehlsortimente:checked+.sortiment::before,
+.mehlsortimente:not(:checked)+.sortiment::before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-right: 18px;
+    top: 7px;
+    border: 1px solid #323232;
+    background: white;
+}
+
+.mehlsortimente:checked+.sortiment::before {
+    background: url('../img/haken.png') no-repeat center center;
+    background-size: 70% auto;
+}
+
+.subheadline {
+    margin-left: 43px;
+    margin-top: -15px;
+    color: #6c6c6c;
+    font-size: 85%;
+    width: 110%;
+}
+
+.subheadline-angebot-one {
+    margin-left: 45px;
+    margin-top: -17px;
+}
+
+.subheadline-angebot-two {
+    margin-left: 45px;
+    margin-top: -17px;
+}
+
+.checkbox-angebot {
+    margin-left: -22px;
+    margin-top: 55px;
+    padding-left: 22px;
+    width: 150%;
+    border: 2px solid #ffdbb1;
+}
+
+.button-angebot {
+    margin-top: 47px;
+}
+
+
+@media only screen and (max-width: 700px) {
+
+    .anmeldung {
+        height: 1320px;
+    }
+
+    .spezial-angebot {
+        height: 1470px;
+    }
+
+    .formular-left {
+        width: 100%;
+    }
+
+    .formular-right {
+        width: 100%;
+        padding-left: 30px;
+    }
+
+    .textfeld-first {
+        margin-left: 30px;
+    }
+
+    .textfeld-big {
+        margin-left: 30px;
+    }
+
+    .textfeld-small {
+        margin-left: 30px;
+    }
+
+    .lieferadresse {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .headline-anmeldung {
+        margin-top: -16px;
+        padding-left: 30px;
+        font-size: 22px;
+    }
+
+    .subheadline-angebot {
+        padding-left: 30px;
+    }
+
+    .trenner {
+        display: none;
+    }
+
+    .lieblingstermin {
+        padding-top: 20px;
+    }
+
+    .ersatztermin {
+        padding-top: 40px;
+    }
+
+    .button {
+        margin-top: 40px;
+        width: 120px;
+        height: 30px;
+    }
+
+    .pflichtfelder {
+        font-size: 11px;
+    }
+
+    .subheadline {
+        margin-top: -10px;
+    }
+
+    .subheadline-angebot-one {
+        margin-top: -11px;
+    }
+
+    .subheadline-angebot-two {
+        margin-top: -11px;
+    }
+
+}
+
+
+/* ============== */
+/* === Slider === */ 
+/* ============== */
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+  }
+  
+  .swipe-wrap {
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .swipe-wrap>div {
+    float: left;
+    width: 100%;
+    height: 662px;
+    position: relative;
+  }
+  
+  /* Inhalt Swipe */
+  .swipe-wrap>.semmeln-img {
+    display: block;
+    font-size: 1em;
+    background: url("../img/semmeln.jpg") no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  .swipe-wrap>.kaese-img {
+    display: block;
+    font-size: 1em;
+    background: url("../img/kaesegebaeck.jpg") no-repeat center center;
+    background-size: 100% auto;
+  }
+
+  .swipe-wrap>.sesam-img {
+    display: block;
+    font-size: 1em;
+    background: url("../img/sesamkugeln.jpg") no-repeat center center;
+    background-size: 100% auto;
+  }
+  
+  .text {
+    display: flex;
+    flex-direction: row;
+    color: #323232;
+    background-color: #ffe9d0;
+    margin: 64px;
+    padding: 30px 0 40px 50px;
+    width: 45%;
+    height: 45%;
+    overflow: hidden;
+    transition: width 1s ease;
+    transition-property: height, width;
+  }
+  
+  .text.open {
+    width: 87%;
+    height: 80%;
+  }
+  
+  .text.open .zubereitung,
+  .text.open .trenner-swipe,
+  .text.open .zutaten {
+    display: block;
+  }
+  
+  .teaser {
+    white-space: nowrap;
+  }
+  
+  .toggle-button {
+    cursor: pointer;
+    background: none;
+    border: 1px solid #323232;
+    border-left: 4px solid #323232;
+    border-radius: 0;
+    width: 189px;
+    height: 35px;
+  }
+  
+  .zubereitung {
+    margin: 58px 64px 0 40px;
+    display: none;
+  }
+  
+  .zutaten {
+    margin-top: 62px;
+  } 
+  
+  .trenner-swipe {
+    display: none;
+    content:'';
+    margin-top: -30px;
+    margin-left: 40px;
+    width: 2px;
+    height: 177px;
+    border-left: 2px solid #323232;
+  }
+  
+  /* Pagina */
+  .swipe-wrapper {
+    width: 100%;
+    position: relative;
+  }
+  
+  .dots {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .dots span {
+    position: relative;
+    margin-top: -60px;
+    margin-right: 25px;
+    width: 27px;
+    height: 42px;
+    background: url("../img/aehre_groß.png") no-repeat center center;
+    opacity: 0.5;
+  }
+  
+  .dots span.active{
+    position: relative;
+    width: 27px;
+    height: 42px;
+    background: url("../img/aehre_groß.png") no-repeat center center;
+    opacity: 1;
+  }
+  
+  @media only screen and (max-width: 750px) {
+  
+    .swipe-wrap>.semmeln-img {
+      display: flex;
+      background: url("../img/semmeln_2.jpg") no-repeat center top;
+      background-size: 100% auto;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .swipe-wrap>.kaese-img {
+        display: flex;
+        background: url("../img/kaesegebaeck_2.jpg") no-repeat center top;
+        background-size: 100% auto;
+        max-width: 100%;
+        height: auto;
+      }
+
+      .swipe-wrap>.sesam-img {
+        display: flex;
+        background: url("../img/sesamkugeln_2.jpg") no-repeat center top;
+        background-size: 100% auto;
+        max-width: 100%;
+        height: auto;
+      }
+    
+    .text {
+      margin: 190px 30px 0 30px;
+      padding: 10px 0 30px 25px;
+      width: 80%;
+      top: 0;
+      left: 0;
+    }
+  
+    .text.open {
+      flex-direction: column;
+      height: 100%;
+    }
+  
+    .zubereitung {
+      margin: 27px 20px 0 0;
+    }
+  
+    .zutaten {
+      display: none;
+      margin-top: 30px;
+    } 
+  
+    .trenner-swipe {
+      width: 177px;
+      height: 2px;
+      margin-top: 15px;
+      margin-left: -30px;
+      border-bottom: 2px solid #323232;
+    }
+  
+    .toggle-button {
+      width: 140px;
+      height: 30px;
+    }
+  
+    /* Pagina */
+    .dots {
+      top: 160px;
+      bottom: auto;
+    }
+    .dots span {
+      margin-top: 0px;
+      margin-right: 12px;
+      width: 14px;
+      height: 20px;
+      background-size: 100% 100%;
+    }
+  
+    .dots span.active{
+      width: 14px;
+      height: 20px;
+      background-size: 100% 100%;
+    }
+  
+  }
+ 
+  
+/* =============== */
+/* === kontakt === */
+/* =============== */
+
+.container-kontakt {
+    position: relative;
+    background-color: #ffe9d0;
+    padding: 30px 0;
+}
+
+.headline-kontakt {
+    position: absolute;
+    background-color: #ffe9d0;
+    padding: 0 15px;
+    font-size: 24px;
+    margin-left: 160px;
+}
+
+.text-kontakt {
+    margin: 35px 140px;
+    border: 2px solid #323232;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 25px 0px;
+}
+
+.absatz {
+    display: flex;
+    flex-direction: row;
+}
+
+.aehre-kontakt {
+    background: url('../img/aehre_klein.png') no-repeat center center;
+    height: 22px;
+    width: 15px;
+    padding: 45px 40px 0 40px;
+}
+
+.aehre-first {
+    display: none;
+}
+
+.aehren {
+    position: absolute;
+    background: url('../img/aehren.png') no-repeat center center;
+    background-size: 235px 335px;
+    width: 235px;
+    height: 335px;
+    left: 0;
+    margin-top: -332px;
+    overflow-x: hidden;
+}
+
+.topf {
+    position: absolute;
+    background: url('../img/topf.png') no-repeat center center;
+    background-size: 134px 358px;
+    width: 134px;
+    height: 358px;
+    right: 0;
+    margin-top: -180px;
+    overflow-x: hidden;
+    z-index: 30;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .text-kontakt {
+        flex-direction: column;
+        margin: 35px 30px;
+        padding-top: 55px;
+        padding-bottom: 15px;
+    }
+
+    .headline-kontakt {
+        font-size: 22px;
+        margin: 23px 0 0 50px;
+        width: 50%;
+        padding: 0 8px;
+    }
+
+    .paragraph-kontakt {
+        padding-top: 8px;
+    }
+
+    .absatz {
+        padding-top: 0px;
+        margin-top: -5px;
+    }
+
+    .aehre-first {
+        display: block;
+    }
+
+    .aehre-kontakt {
+        padding: 45px 40px 0 0;
+    }
+
+    .aehren {
+        background: url('../img/aehren_2.png') no-repeat center center;
+        background-size: 114px 135px;
+        width: 114px;
+        height: 135px;
+        margin-top: -380px;
+    }
+
+    .topf {
+        position: absolute;
+        background: url('../img/topf_2.png') no-repeat center center;
+        background-size: 78px 170px;
+        width: 78px;
+        height: 170px;
+        margin-top: -100px;
+    }
+
+}
+
+
+/* =============== */
+/* === footer === */
+/* =============== */
+
+.footer {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    background-color: #323232;
+    color: white;
+    padding: 40px 64px 40px 64px;
+}
+
+.headline-footer {
+    color: #ffdbb1;
+}
+
+
+/* === Impressum === */
+.impressum {
+    width: 100%;
+    margin-right: 60px;
+}
+
+.anschrift {
+    display: flex;
+    flex-direction: row;
+}
+
+.anschrift-one {
+    padding-right: 60px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.snapchat {
+    margin-right: 20px;
+    background: url('../img/snapchat.png') no-repeat center center;
+    background-size: 33px 35px;
+    width: 33px;
+    height: 35px;
+}
+
+.instagram {
+    margin-right: 20px;
+    background: url('../img/instagram.png') no-repeat center center;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.pinterest {
+    background: url('../img/pinterest.png') no-repeat center center;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.trenner-footer {
+    height: 210px;
+    border-right: 2px solid white;
+    position: absolute;
+    margin-left: 46.5%;
+    bottom: 0;
+    left: 0;
+    z-index: 50;
+}
+
+/* === Datenschutz === */
+.absatz-datenschutz {
+    padding-top: 15px;
+}
+
+.link-datenschutz {
+    color: white;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .footer {
+        flex-direction: column;
+        padding: 10px 30px 40px 30px;
+    }
+
+    /* === Impressum === */
+    .anschrift {
+        flex-direction: column;
+    }
+
+    .anschrift-two {
+        margin-top: -12px;
+    }
+
+    .anschrift-three {
+        margin-top: -12px;
+    }
+
+    /* === Datenschutz === */
+    .datenschutz {
+        padding-top: 60px;
+    }
+
+    .trenner-footer {
+        width: 45%;
+        border-bottom: 2px solid white;
+        border-right: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 50;
+        margin-left: 0px;
+        margin-top: 170px;
+    }
+
+}

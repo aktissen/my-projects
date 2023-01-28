@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Die Mühlenbäcker</title>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/kif6men.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>
+    <!-- === navigation === -->
+    <header class="overlay">
+        <div class="menu">
+            <div class="close"></div>
+            <ul>
+                <li><a href="#">Vorfreude</a></li>
+                <li><a href="#">Anmeldung</a></li>
+                <li><a href="#">Rezepte</a></li>
+                <li><a href="#">Spezial-Angebot</a></li>
+                <li><a href="#">Kontakt</a></li>
+                <li><a href="#">Impressum/Datenschutz</a></li>
+            </ul>
+        </div>
+    </header>
+    <!-- === header === -->
+    <div class="header-image">
+        <div class="logo-line">
+            <div class="trenner-one"></div>
+            <img class="logo" src="img/Logo.png" alt="logo">
+            <div class="trenner-two"></div>
+            <img class="burger" src="img/burger.png" alt="burger">
+            <div class="trenner-three"></div>
+        </div>
+        <div class="text-header">
+            <p>Getreidemühle Korn und Schrot präsentiert</p>
+            <h1 class="headline">Die Mühlenbäcker</h1>
+        </div>
+    </div>
+
+    <!-- === vorfreude === -->
+    <div class="vorfreude">
+        <div class="anfasser"></div>
+        <div class="text-vorfreude">
+            <h2>Worauf Sie sich freuen dürfen</h2>
+            <p class="paragraph-vorfreude">Gemeinsam zubereitete schmackhafte Semmeln und Gebäck mit frischen Zutaten
+                aus unserer eigenen Mühle –
+                ökologisch, regional und erschwinglich. <br>
+                <br>
+                Sie erleben Spaß und Genuss beim gemeinsamen Backen und Schlemmen. Lassen Sie sich überraschen, welche/r
+                Bäckermeister/in bei Ihrer Mühlenbäckerei die Anleitung übernimmt! <br>
+                <br>
+                Außerdem eröffnen Sie sich eine große Chance: Alle Teilnehmer der Mühlenbäckerei können unsere
+                Mehlsorten in einem Spezial-Angebot bestellen.
+            </p>
+        </div>
+
+        <div class="punkte-vorfreude">
+            <div class="unterpunkte">
+                <div class="aehre-klein"></div>
+                <p class="text-unterpunkte"><b>Eingeladen zur Mühlenbäckerei sind:</b><br> junge und junggebliebene
+                    ernährungsbewusste Hobbybäcker aus unserer Region Straubing.</p>
+            </div>
+            <div class="unterpunkte">
+                <div class="aehre-klein"></div>
+                <p class="text-unterpunkte"><b>Unkostenbeitrag:</b> EUR 20,–</p>
+            </div>
+            <div class="unterpunkte">
+                <div class="aehre-klein"></div>
+                <p class="text-unterpunkte"><b>Anmeldeschluss:</b> 1. Oktober 2019</p>
+            </div>
+            <div class="unterpunkte stoerer">
+                <p><b>4 × in diesem Herbst</b><br> jeweils ab 14.30 Uhr <br>
+                    in unserer hauseigenen Mühlenbäckerei <br>
+                    bei der Getreidemühle Korn und Schrot, <br> Schanzlweg 37, 94315 Straubing
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div class="leinsamen"></div>
+
+    <!-- === anmeldung === -->
+
+    <div class="anmeldung">
+        <h2 class="headline-anmeldung">Anmeldung</h2>
+
+        <form method="GET" action="#" class="formular">
+
+            <div class="formular-left">
+                <!-- Teftfelder -->
+                <div class="textfeld-first">
+                    <label for="name">Name*</label>
+                    <div class="before">
+                        <input type="text" name="name" class="textfeld" required>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="vorname">Vorname*</label>
+                    <div class="before">
+                        <input type="text" name="vorname" class="textfeld" required>
+                    </div>
+                </div>
+
+
+                <div class="textfeld-big">
+                    <label for="name">Straße*, Hausnummer*</label>
+                    <div class="input-horizontal">
+                        <div class="before straße">
+                            <input type="text" name="straße" class="textfeld-parted" required>
+                        </div>
+                        <div class="before hausnummer">
+                            <input type="text" name="hausnummer" class="textfeld-parted" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="name">PLZ*, Ort*</label>
+                    <div class="input-horizontal">
+                        <div class="before plz">
+                            <input type="text" name="plz" class="textfeld-parted" pattern="^[0-9]{5}$" required>
+                        </div>
+                        <div class="before ort">
+                            <input type="text" name="ort" class="textfeld-parted" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textfeld-big">
+                    <label for="name">E-Mail*</label>
+                    <div class="before">
+                        <input type="email" name="name" class="textfeld" required>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="vorname">Telefon</label>
+                    <div class="before">
+                        <input type="text" name="vorname" class="textfeld">
+                    </div>
+                </div>
+            </div>
+
+            <div class="trenner"></div>
+
+            <div class="formular-right">
+                <!-- Radio-Buttons -->
+
+                <div class="lieblingstermin">
+                    <p><b>Lieblingstermin* für die Mühlenbäcker</b></p>
+
+                    <label for="freitag-one" class="radio">
+                        <input type="radio" name="Lieblingstermin" value="Freitag, 25. Oktober 2019" class="termin"
+                            id="freitag-one" checked required>
+                        <p class="paragraph">Freitag, 25. Oktober 2019</p>
+                    </label>
+
+                    <label for="samstag-one" class="radio">
+                        <input type="radio" name="Lieblingstermin" value="Samstag, 26. Oktober 2019" class="termin"
+                            id="samstag-one">
+                        <p class="paragraph">Samstag, 26. Oktober 2019</p>
+                    </label>
+
+                    <label for="freitag-two" class="radio">
+                        <input type="radio" name="Lieblingstermin" value="Freitag, 1. November 2019" class="termin"
+                            id="freitag-two">
+                        <p class="paragraph">Freitag, 25. Oktober 2019</p>
+                    </label>
+
+                    <label for="samstag-two" class="radio">
+                        <input type="radio" name="Lieblingstermin" value="Samstag, 2. November 2019" class="termin"
+                            id="samstag-two">
+                        <p class="paragraph">Samstag, 26. Oktober 2019</p>
+                    </label>
+                </div>
+
+                <div class="ersatztermin">
+                    <p><b>Ersatztermin für die Mühlenbäcker</b></p>
+
+                    <label for="freitag-three" class="radio">
+                        <input type="radio" name="Ersatztermin" value="Freitag, 25. Oktober 2019" class="termin"
+                            id="freitag-three">
+                        <p class="paragraph">Freitag, 25. Oktober 2019</p>
+                    </label>
+
+                    <label for="samstag-three" class="radio">
+                        <input type="radio" name="Ersatztermin" value="Samstag, 26. Oktober 2019" class="termin"
+                            id="samstag-three">
+                        <p class="paragraph">Samstag, 26. Oktober 2019</p>
+                    </label>
+
+                    <label for="freitag-four" class="radio">
+                        <input type="radio" name="Ersatztermin" value="Freitag, 1. November 2019" class="termin"
+                            id="freitag-four">
+                        <p class="paragraph">Freitag, 25. Oktober 2019</p>
+                    </label>
+
+                    <label for="samstag-four" class="radio">
+                        <input type="radio" name="Ersatztermin" value="Samstag, 2. November 2019" class="termin"
+                            id="samstag-four">
+                        <p class="paragraph">Samstag, 26. Oktober 2019</p>
+                    </label>
+                </div>
+
+                <input type="reset" value="Zurücksetzen" class="button">
+                <input type="submit" value="Absenden" class="button">
+                <p class="pflichtfelder">*Pflichtfelder</p>
+            </div>
+        </form>
+    </div>
+
+
+    
+  <!-- ====== recipes ====== -->
+  <div class="swipe-wrapper">
+        <div id="mySwipe" class="swipe">
+          <div class="swipe-wrap">
+            <div class="semmeln-img">
+              <div class="text">
+                <div class="teaser">
+                  <p>Rezepte zum „Aufwärmen“</p>
+                  <h1 class="headline-rezept"> Weizen-Dinkel-<br>Semmeln</h1>
+                  <input type="button" class="toggle-button toggle-button-one" value="Rezept anzeigen">
+                  <p class="zutaten">
+                    <b>Zutaten:</b> <br>
+                    250 g Weizenvollkornmehl <br>
+                    250 g Dinkelvollkornmehl <br>
+                    5 g Zucker <br>
+                    5 g Butter <br>
+                    10 g Salz <br>
+                    1 Päckchen Trockenhefe <br>
+                    300 ml warmes Wasser <br>
+                  </p>
+                </div>
+                <div class="trenner-swipe"></div>
+                <p class="zubereitung">
+                  <b>Zubereitung:</b><br>
+                  Alle Zutaten bis auf die Hefe mischen. Die Hefe im warmen Wasser auflösen und dazugeben. Den Teig zwei bis
+                  drei Minuten gut durchkneten. Zu einem Ballen formen und 20 Minuten bei 25 Grad in einer zugedeckten
+                  Schüssel aufgehen lassen.
+                  Danach zwölf Teile des Teigs zu Semmeln rollen. Auf ein Backblech setzen, abdecken, weitere 30 Minuten
+                  ruhen
+                  lassen. Mit einem scharfen Küchenmesser jede Teigrolle einkerben. Den Backofen auf 230 Grad vorheizen. In
+                  die Fettpfanne des Backofens gut 200 ml heißes Wasser gießen, das Blech mit den Semmeln in den Ofen
+                  schieben
+                  und 25 Minuten backen. (Vor dem Backen kann man die Teigrollen auch mit Sonnenblumen- oder Kürbiskernen,
+                  mit
+                  Kümmel oder Mohn bestreuen.)</p>
+              </div>
+            </div>
+            <div class="kaese-img">
+              <div class="text">
+                <div class="teaser">
+                  <p>Rezepte zum „Aufwärmen“</p>
+                  <h1 class="headline-rezept">Käsegebäck</h1>
+                  <input type="button" class="toggle-button toggle-button-two" value="Rezept anzeigen">
+                  <p class="zutaten">
+                    <b>Zutaten:</b> <br>
+                    200 g Emmentaler (gerieben) <br>
+                    200 g Butter <br>
+                    250 g Weizenvollkornmehl <br>
+                    ½ TL Salz <br>
+                    2 Eigelb <br>
+                    2 TL Milch <br>
+                    Kümmel, Paprika <br>
+                    
+                  </p>
+                </div>
+                <div class="trenner-swipe"></div>
+                <p class="zubereitung">
+                  <b>Zubereitung:</b><br>
+                  Mehl, Käse und kalte Butterstücke schnell verkneten und eine halbe Stunde kühl stellen. Danach den Teig nach und nach auf einer bemehlten Platte ausrollen und beliebige Formen ausstechen. Eigelb und Milch verrühren, die Teile damit bestreichen, mit Kümmel oder Paprika bestreuen. Bei 180 Grad auf mittlerer Schiene eine gute Viertelstunde backen und auf dem Blech auskühlen lassen.</p>
+              </div>
+            </div>
+            <div class="sesam-img">
+              <div class="text">
+                <div class="teaser">
+                  <p>Rezepte zum „Aufwärmen“</p>
+                  <h1 class="headline-rezept">Sesamkugeln</h1>
+                  <input type="button" class="toggle-button toggle-button-three" value="Rezept anzeigen">
+                  <p class="zutaten">
+                    <b>Zutaten:</b> <br>
+                    180 g Weizenvollkornmehl <br>
+                    180 g Butter <br>
+                    120 g Sesam <br>
+                    120 g Honig <br>
+                    Zimt, Vanille, Salz, <br>
+                    Nelken, Mandeln
+                  </p>
+                </div>
+                <div class="trenner-swipe"></div>
+                <p class="zubereitung">
+                  <b>Zubereitung:</b><br>
+                  Sesam rösten, mit Butter und Honig verrühren, die Gewürze und das Mehl hinzufügen. Den Teig etwa eine Stunde kühl stellen. Danach walnussgroße Kugeln formen, in die Mitte eine Mandel drücken und auf dem Backblech etwa zehn Minuten bei 210 Grad auf mittlerer Schiene backen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="dots">
+          <span class="dot1 active"></span>
+          <span class="dot2"></span>
+          <span class="dot3"></span>
+        </div>
+      </div>
+
+
+    <!-- === Spezial-Angebot === -->
+
+    <div class="anmeldung spezial-angebot">
+        <h2 class="headline-anmeldung">Unser besonderes
+            Mehlsortiment für Sie</h2>
+
+        <div class="trenner-angebot"></div>
+
+        <p class="subheadline-angebot"><b>Ich möchte das Spezial-Angebot des Mehlsortiments in Anspruch nehmen.</b></p>
+
+        <form method="GET" action="#" class="formular  container-angebot">
+
+            <div class="formular-left">
+                <!-- Teftfelder -->
+                <div class="textfeld-first">
+                    <label for="name">Name*</label>
+                    <div class="before">
+                        <input type="text" name="name" class="textfeld" required>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="vorname">Vorname*</label>
+                    <div class="before">
+                        <input type="text" name="vorname" class="textfeld" required>
+                    </div>
+                </div>
+
+
+                <div class="textfeld-big">
+                    <label for="name">Straße*, Hausnummer*</label>
+                    <div class="input-horizontal">
+                        <div class="before straße">
+                            <input type="text" name="straße" class="textfeld-parted" required>
+                        </div>
+                        <div class="before hausnummer">
+                            <input type="text" name="hausnummer" class="textfeld-parted" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="name">PLZ*, Ort*</label>
+                    <div class="input-horizontal">
+                        <div class="before plz">
+                            <input type="text" name="plz" class="textfeld-parted" pattern="^[0-9]{5}$" required>
+                        </div>
+                        <div class="before ort">
+                            <input type="text" name="ort" class="textfeld-parted" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="textfeld-big">
+                    <label for="name">E-Mail*</label>
+                    <div class="before">
+                        <input type="email" name="name" class="textfeld" required>
+                    </div>
+                </div>
+
+                <div class="textfeld-small">
+                    <label for="vorname">Telefon</label>
+                    <div class="before">
+                        <input type="text" name="vorname" class="textfeld">
+                    </div>
+                </div>
+            </div>
+
+            <div class="formular-right">
+                <!-- Checkboxen -->
+                <label for="back-mas" class="checkbox">
+                    <input type="checkbox" name="mehlsorten" value="back-mas" id="back-mas" class="mehlsortimente">
+                    <p class="sortiment">Mehlsortiment Back ma‘s<br>
+                        <p class="subheadline">(Dinkeldunst, Weizenvollkorn, Roggen Type 815)</p>
+                    </p>
+                </label>
+
+                <label for="italiano" class="checkbox">
+                    <input type="checkbox" name="mehlsorten" value="italiano" id="italiano" class="mehlsortimente">
+                    <p class="sortiment">Mehlsortiment Italiano<br>
+                        <p class="subheadline">(Tipo 00, Weizen Type 2000, Hanfmehl)</p>
+                    </p>
+                </label>
+
+                <label for="christ-kindl" class="checkbox">
+                    <input type="checkbox" name="mehlsorten" value="christ-kindl" id="christ-kindl"
+                        class="mehlsortimente">
+                    <p class="sortiment">Mehlsortiment Christ Kindl<br>
+                        <p class="subheadline">(Weizen Type 550, Roggen Type 610, Hanfmehl)</p>
+                    </p>
+                </label>
+
+                <div class="textfeld-first lieferadresse">
+                    <label for="lieferadresse">Lieferadresse</label>
+                    <div class="before">
+                        <input type="text" name="lieferadresse" class="textfeld">
+                    </div>
+                </div>
+
+                <div class="textfeld-small lieferadresse">
+                    <label for="rechnungsadresse">Rechnungsadresse</label>
+                    <div class="before">
+                        <input type="text" name="rechnungsadresse" class="textfeld">
+                    </div>
+                </div>
+
+                <div class="checkbox-angebot">
+                    <label for="angebot" class="checkbox">
+                        <input type="checkbox" name="angebot" value="angebot" id="angebot" class="mehlsortimente">
+                        <p class="sortiment">Ich will mich erst bei der Mühlenbäckerei<br>
+                            <p class="subheadline-angebot-one">entscheiden, ob ich das Spezial-Abo in</p>
+                            <p class="subheadline-angebot-two">Anspruch nehme.</p>
+                        </p>
+                    </label>
+                </div>
+
+
+
+
+                <input type="reset" value="Zurücksetzen" class="button button-angebot">
+                <input type="submit" value="Absenden" class="button button-angebot">
+                <p class="pflichtfelder">*Pflichtfelder</p>
+            </div>
+        </form>
+    </div>
+
+
+    <!-- === Kontakt === -->
+
+    <div class="container-kontakt">
+        <h2 class="headline-kontakt"> Kontakt und Info-Telefon</h2>
+        <div class="text-kontakt">
+            <div class="absatz">
+                <div class="aehre-kontakt aehre-first"></div>
+                <p class="paragraph-kontakt">Stefan Miller</p>
+            </div>
+            <div class="absatz">
+                <div class="aehre-kontakt"></div>
+                <p class="paragraph-kontakt">muehlenbaecker@kornundschrot.de</p>
+            </div>
+            <div class="absatz">
+                <div class="aehre-kontakt"></div>
+                <p class="paragraph-kontakt">Tel: 09421/12340</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="aehren"></div>
+    <div class="topf"></div>
+
+    <!-- === footer === -->
+
+    <div class="footer">
+        <div class="impressum">
+            <h2 class="headline-footer">Impressum</h2>
+            <div>
+                <p><b>Getreidemühle Korn und Schrot e.K.</b></p>
+                <div class="anschrift">
+                    <p class="anschrift-one">Susanne Miller <br>
+                        Schanzlweg 37 <br>
+                        94315 Straubing</p>
+                    <p class="anschrift-two">Tel: 09421/12340 <br>
+                        Fax: 09421/12344 <br>
+                        kontakt@kornundschrot.de</p>
+                </div>
+                <p class="anschrift-three">www.kornundschrot.de <br>
+                    <br>
+                    Amtsgericht Straubing/Registersachen, XXX020101 <br>
+                    Umsatzsteuer ID: DE787654
+                </p>
+            </div>
+            <div class="social-media">
+                <a href="https://www.snapchat.com/" class="snapchat"></a>
+                <a href="https://www.instagram.com/" class="instagram"></a>
+                <a href="https://www.pinterest.de/" class="pinterest"></a>
+            </div>
+        </div>
+
+        <div class="trenner-footer"></div>
+
+        <div class="datenschutz">
+            <h2 class="headline-footer">Datenschutz</h2>
+            <p><b>Datenschutzhinweise gemäß <br>EU-Datenschutz-Grundverordnung (DSGVO)</b></p>
+            <p class="absatz-datenschutz">
+                Wir setzen die seit dem 25. Mai 2018 geltende EU-Datenschutz-Grundverordnung (DSGVO) um, insbesondere,
+                wenn es um die Verarbeitung Ihrer personenbezogenen Daten durch uns sowie um die Ihnen dabei zustehenden
+                Rechte geht. <br> <br>
+                Die Hinweise werden soweit erforderlich aktualisiert und sind im Detail nachlesbar unter:
+            </p>
+
+            <a class="link-datenschutz" href="#">http://www.kornundschrot.de/datenschutz.php.</a>
+        </div>
+    </div>
+    <script src="js/swipe.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

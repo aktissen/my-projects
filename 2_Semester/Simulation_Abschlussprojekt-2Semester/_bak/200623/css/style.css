@@ -1,0 +1,21 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.svg {
+  opacity: 1;
+  position: absolute;
+  display: none;
+}
+
+#bus {
+  transform: translate(26.6vw, 27vh);
+  position: absolute;
+  /* display: none; */
+}
+
+#car {
+  transform: translate(23.9vw, 27vh);
+}

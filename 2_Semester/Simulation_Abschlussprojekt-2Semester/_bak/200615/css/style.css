@@ -1,0 +1,29 @@
+body {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+
+.svg {
+  opacity: 1;
+  /* display: none; */
+  /* position: relative; */
+  /* margin-left: 51em; */
+  transform: translate(42.5vw, 33vh);
+  /* visibility: hidden; */
+}
+
+.svg:hover {
+  opacity: 0.5;
+  /* display: block; */
+}
+
+/* .svgdisabled {
+  display: none;
+} */
+
+#bus {
+  position: absolute;
+  display: none;
+  /* visibility: hidden; */
+}
