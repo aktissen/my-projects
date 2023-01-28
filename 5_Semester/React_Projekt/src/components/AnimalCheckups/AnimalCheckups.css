@@ -1,0 +1,36 @@
+.container-circle {
+  margin-top: 50px;
+}
+
+.line {
+  border-left: 1px solid darkgray;
+  position: fixed;
+  height: 500px;
+  margin-left: 7.4em;
+}
+
+.date-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  z-index: 100;
+}
+
+.date {
+  font-weight: 600;
+}
+
+.text-checkups {
+  margin-left: 8em;
+  color: #0388a6;
+  text-decoration: none;
+}
+
+.add-icon {
+  height: 50px;
+  position: absolute;
+  top: 260px;
+  left: 220px;
+  z-index: 10;
+}

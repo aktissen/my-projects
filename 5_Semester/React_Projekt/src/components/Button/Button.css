@@ -1,0 +1,36 @@
+ul {
+  list-style-type: none;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.buttonToNewSite {
+  color: white;
+  background-color: #0388a6;
+  width: 200px !important;
+  padding: 20px;
+  text-decoration: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-image {
+  width: 20px;
+  margin-right: 10px;
+}
+
+.changeButton {
+  background-color: #262626 !important;
+  padding: 10px 20px 10px 20px;
+  margin: 2em auto;
+}
+
+.submitButton {
+  padding: 10px 20px 10px 20px;
+}

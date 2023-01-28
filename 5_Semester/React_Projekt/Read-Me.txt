@@ -1,0 +1,2 @@
+Um die Anwendung anschauen zu können, den Ordner "React-Projekt" im Terminal öffnen und npm start ausführen. Nachdem die Anwendung geladen ist, mittels Entwicklertools
+die Größe "Iphone 12 Pro" auswählen. 

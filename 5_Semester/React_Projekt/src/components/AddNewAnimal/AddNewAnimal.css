@@ -1,0 +1,16 @@
+.custom-image-upload::-webkit-file-upload-button {
+  visibility: hidden;
+}
+
+.custom-image-upload::before {
+  content: "Bild auswählen";
+  align-content: center;
+  text-align: center;
+  width: 50%;
+  margin: 0 0 10% 25%;
+  padding: 3% 0;
+  display: inline-block;
+  background: lightgrey;
+  color: grey;
+  -webkit-user-select: none;
+}

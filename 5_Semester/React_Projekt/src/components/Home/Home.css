@@ -1,0 +1,10 @@
+.container-home {
+  margin-top: 200px;
+}
+
+.cat-icon {
+  position: fixed;
+  bottom: 0;
+  width: 200px;
+  z-index: -1;
+}

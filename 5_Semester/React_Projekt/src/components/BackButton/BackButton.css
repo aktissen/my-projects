@@ -1,0 +1,10 @@
+button {
+  background-color: white;
+  border: none;
+  padding: 0 15px 15px 15px;
+  position: fixed;
+}
+
+.chevron {
+  width: 10px;
+}

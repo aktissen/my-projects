@@ -1,0 +1,10 @@
+.animal-picture {
+  position: fixed;
+  top: 7%;
+  height: 35%;
+  z-index: 0;
+}
+
+.container-animal {
+  margin-top: 430px;
+}
